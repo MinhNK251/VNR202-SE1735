@@ -57,9 +57,9 @@ export default function QuizSection() {
   }
 
   return (
-    <section className="max-w-2xl mx-auto p-6 bg-slate-950 rounded-2xl shadow-md space-y-6">
+    <section className="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-md space-y-6">
       <h2 className="text-2xl font-bold text-center mb-4">
-        Quiz: Chủ nghĩa Mác-Lênin & Giai cấp công nhân
+        Quiz: Phong trào cách mạng 1930 - 1931 và cuộc vận động dân chủ 1936 - 1939
       </h2>
 
       {!finished ? (

@@ -78,9 +78,13 @@ export default function HorizontalScroll(): JSX.Element {
                 <ChatContainer />
               </ChatProvider>
             </div>
+            
           </section>
-          <QuizSection/>
-          <section className="bg-slate-900 text-white py-16 px-6 lg:px-16">
+          <section className="bg-slate-950 py-16 px-6 lg:px-16">
+            <QuizSection/>
+          </section>
+            
+          <section className="bg-slate-950 text-white py-16 px-6 lg:px-16">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-orange-400 mb-6">
                 🌐 Nguyên tắc sử dụng AI trong dự án
