@@ -57,7 +57,7 @@ export default function QuizSection() {
   }
 
   return (
-    <section className="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-md space-y-6">
+    <section className="max-w-2xl mx-auto p-6 bg-slate-950 rounded-2xl shadow-md space-y-6">
       <h2 className="text-2xl font-bold text-center mb-4">
         Quiz: Chủ nghĩa Mác-Lênin & Giai cấp công nhân
       </h2>
