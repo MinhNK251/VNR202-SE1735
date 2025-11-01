@@ -9,21 +9,21 @@ const projects = [
     title: "📅 Tháng 7/1936",
     description:
       "Hội nghị Ban Chấp hành Trung ương Đảng (họp tại Thượng Hải) xác định nhiệm vụ trước mắt là chống phát xít, chống chiến tranh đế quốc, chống phản động thuộc địa và tay sai, đòi tự do, dân chủ, cơm áo và hòa bình.",
-    link: "/assets/image/return.jpg",
+    link: "/assets/image/dang-tai-thuong-hai.jpg",
     color: "#5196fd",
   },
   {
     title: "🤝 Mặt trận",
     description:
       "Chủ trương thành lập “Mặt trận nhân dân phản đế rộng rãi”. Đến tháng 3/1938, tên gọi được đổi thành “Mặt trận dân chủ thống nhất”.",
-    link: "/assets/image/huan-luyen-can-bo.jpg",
+    link: "/assets/image/mat-tran-dan-toc-thong-nhat.jpg",
     color: "#8f89ff",
   },
   {
     title: "📣 Hình thức đấu tranh",
     description:
       "Đảng chủ trương chuyển từ bí mật, bất hợp pháp sang các hình thức công khai, nửa công khai, hợp pháp, nửa hợp pháp, kết hợp chặt chẽ với bí mật.",
-    link: "/assets/image/hoi-nghi-6.jpg",
+    link: "/assets/image/chi-dao-chien-luoc-cua-dang.jpg",
     color: "#4caf50",
   },
 ];
@@ -43,7 +43,7 @@ export default function DevelopmentSection(): JSX.Element {
           <h1 className="text-orange-500 text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
             ☀️ Cao trào dân chủ 1936-1939
           </h1>
-          <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+          <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-40 font-semibold text-center tracking-tight leading-[120%]">
             Phong trào này diễn ra trong bối cảnh chủ nghĩa phát xít xuất hiện và Đại hội VII Quốc tế Cộng sản (7/1935) chủ trương lập mặt trận chống phát xít. Đặc biệt, Mặt trận Nhân dân Pháp lên cầm quyền (1936), đã ban hành một số quyền tự do dân chủ ở thuộc địa, tạo điều kiện thuận lợi cho cuộc đấu tranh.
           </h3>
         </section>

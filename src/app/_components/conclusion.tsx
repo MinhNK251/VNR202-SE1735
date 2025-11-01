@@ -21,7 +21,7 @@ const items = [
     title: "🔥 Tháng 9/1939",
     desc: "Chiến tranh thế giới thứ hai bùng nổ. Thực dân Pháp ở Đông Dương tăng cường đàn áp. Đảng phải rút vào hoạt động bí mật, kết thúc thời kỳ đấu tranh dân chủ.",
     sliderName: "Tháng 9/1939",
-    src: "/assets/image/hcm-12.png",
+    src: "/assets/image/ww2.jpg",
   },
   {
     icon: <Home />,
@@ -32,7 +32,7 @@ const items = [
     xây dựng mặt trận và kết hợp các hình thức đấu tranh. Phong trào này "thực sự là một bước chuẩn bị cho thắng lợi 
     của Cách mạng Tháng Tám sau này".`,
     sliderName: "Tư tưởng",
-    src: "/assets/image/hcm-11.jpg",
+    src: "/assets/image/hoi-nghi-6.jpg",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function ConclusionSection() {
             </SliderBtnGroup>
 
             {/* Image Section */}
-            <SliderContent className="hidden w-full md:w-3/6 lg:flex md:flex flex-col h-[40vh] md:h-[70vh] pe-5">
+            <SliderContent className="hidden w-full md:w-3/6 lg:flex md:flex flex-col h-[40vh] md:h-[60vh] pe-5">
               {items.map((item, index) => (
                 <SliderWrapper
                   className="h-full w-full"

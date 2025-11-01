@@ -19,7 +19,7 @@ export const ChatProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       sender: "ai",
-      text: "Xin chào, tôi là AI Chatbot chuyên trả lời những câu hỏi về quá trình phát triển tư tưởng Hồ Chí Minh giai đoạn 1930 đến 1969.",
+      text: "Xin chào, tôi là AI Chatbot chuyên trả lời những câu hỏi về Cao trào cách mạng 1930-1931 và 1936 -1939. Bạn có gì muốn hỏi về nội dung được trình bày trong web ko?",
       createdAt: new Date().toISOString(),
     },
   ]);

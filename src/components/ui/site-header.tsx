@@ -18,19 +18,19 @@ const navigation = [
   },
   {
     id: "giai-doan-1",
-    label: "(1930–1941)",
+    label: "(1930–1931)",
     hrefs: [
       "#giai-doan-1",
     ],
   },
   {
     id: "giai-doan-2",
-    label: "(1941–1969)",
+    label: "(1936–1939)",
     hrefs: ["#giai-doan-2"],
   },
   {
     id: "opinion",
-    label: "Nhận xét",
+    label: "Ý nghĩa",
     hrefs: ["#opinion"],
   },
   {

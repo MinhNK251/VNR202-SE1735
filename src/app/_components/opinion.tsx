@@ -12,7 +12,7 @@ export default function OpinionSection(): JSX.Element {
             <h1 className="text-orange-500 text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
               🏛️ Cao trào cách mạng 1930-1931
             </h1>
-            <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+            <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-40 font-semibold text-center tracking-tight leading-[120%]">
               Phong trào này diễn ra ngay sau khi Đảng Cộng sản Việt Nam ra đời, trong bối cảnh cuộc khủng hoảng kinh tế 1929-1933 và chính sách khủng bố trắng của thực dân Pháp sau khởi nghĩa Yên Bái.
             </h3>
           </section>
@@ -41,32 +41,20 @@ export default function OpinionSection(): JSX.Element {
                   {
                     bg: "bg-red-500",
                     rotate: "rotate-6",
-                    title: "⛓️ Thoát khỏi nhà tù Hồng Kông",
-                    image: "prison-hong-kong.jpg",
+                    title: "✊🪧 Bãi công",
+                    image: "bai-cong.jpg",
                   },
                   {
                     bg: "bg-green-400",
                     rotate: "-rotate-6",
-                    title: "📚 Học tại Trường Quốc tế Lênin (Liên Xô)",
-                    image: "naq-4.jpg",
-                  },
-                  {
-                    bg: "bg-orange-400",
-                    rotate: "rotate-5",
-                    title: "📝 Nghiên cứu tại Viện Dân tộc và Thuộc địa",
-                    image: "naq-3.webp",
+                    title: "🎉 Kỉ niệm Ngày Quốc tế Lao động",
+                    image: "quoc-te-lao-dong.jpg",
                   },
                   {
                     bg: "bg-blue-400",
-                    rotate: "-rotate-5",
-                    title: "💌 Gửi thư xin trở lại hoạt động (6/1938)",
-                    image: "letter.jpg",
-                  },
-                  {
-                    bg: "bg-purple-400",
-                    rotate: "rotate-6",
-                    title: "✈️ Chuẩn bị trở về nước (cuối 1938)",
-                    image: "return.jpg",
+                    rotate: "rotate-5",
+                    title: "📝 Di tích Ngã ba Bến Thủy (thành phố Vinh)",
+                    image: "di-tich.jpg",
                   },
                   // ... Thêm các phần tử khác tương tự
                 ].map((item, index) => (
@@ -105,25 +93,16 @@ export default function OpinionSection(): JSX.Element {
                   Các tổ chức Đảng ở cơ sở đã lãnh đạo các ban chấp hành nông hội (nông dân) đứng ra quản lý mọi mặt đời sống xã hội ở nông thôn. Đây là hình thức chính quyền cách mạng sơ khai, thực hiện dân chủ với quần chúng, được gọi là "Xô viết".
                 </p>
               </blockquote>
-              <div className="relative w-full lg:w-[41.67%] h-72">
-                {/* Top-left image */}
-                <img
-                  src="/assets/image/hoi-nghi-1.jpg"
-                  alt="Image 1"
-                  className="absolute top-0 left-0 w-80 h-52 object-cover rounded-lg shadow-md border-2 border-white rotate-[-8deg]"
-                />
-                {/* Top-right image */}
-                <img
-                  src="/assets/image/hieu-lam.jpg"
-                  alt="Image 2"
-                  className="absolute top-0 right-0 w-48 h-64 object-cover rounded-lg shadow-md border-2 border-white rotate-[8deg]"
-                />
-                {/* Bottom-center image */}
-                <img
-                  src="/assets/image/naq-1.jpg"
-                  alt="Image 3"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 h-36 object-cover rounded-lg shadow-md border-2 border-white rotate-[-3deg]"
-                />
+              
+              <div className="relative w-full lg:w-[41.67%] aspect-video rounded-lg overflow-hidden shadow-lg border-2 border-white">
+                <iframe
+                  src="https://www.youtube.com/embed/4oqWPiMGn68"
+                  title="Xô Viết Nghệ Tĩnh - Đỉnh cao phong trào cách mạng Việt Nam 1930-1931 | Phim hoạt hình cách mạng 2024"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </section>
@@ -147,21 +126,30 @@ export default function OpinionSection(): JSX.Element {
               <div className="relative w-full lg:w-[41.67%] h-72">
                 {/* Top-left image */}
                 <img
-                  src="/assets/image/hoi-nghi-1.jpg"
+                  src="/assets/image/nghe-tinh-4.jpg"
                   alt="Image 1"
-                  className="absolute top-0 left-0 w-80 h-52 object-cover rounded-lg shadow-md border-2 border-white rotate-[-8deg]"
+                  className="absolute top-0 left-0 w-80 h-52 object-cover rounded-lg shadow-md border-2 border-white rotate-[8deg]"
                 />
+
                 {/* Top-right image */}
                 <img
-                  src="/assets/image/hieu-lam.jpg"
+                  src="/assets/image/nghe-tinh-5.jpg"
                   alt="Image 2"
-                  className="absolute top-0 right-0 w-48 h-64 object-cover rounded-lg shadow-md border-2 border-white rotate-[8deg]"
+                  className="absolute top-0 right-0 w-48 h-64 object-cover rounded-lg shadow-md border-2 border-white rotate-[-2deg]"
                 />
+
                 {/* Bottom-center image */}
                 <img
-                  src="/assets/image/naq-1.jpg"
+                  src="/assets/image/dau-tranh.jpg"
                   alt="Image 3"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 h-36 object-cover rounded-lg shadow-md border-2 border-white rotate-[-3deg]"
+                  className="absolute bottom-0 left-1/2 translate-x-1/5 w-60 h-36 object-cover rounded-lg shadow-md border-2 border-white rotate-[3deg]"
+                />
+
+                {/* Bottom-left image (new) */}
+                <img
+                  src="/assets/image/lanh-dao-dang.png"
+                  alt="Image 4"
+                  className="absolute bottom-4 left-0 w-48 h-40 object-cover rounded-lg shadow-md border-2 border-white rotate-[-5deg]"
                 />
               </div>
             </div>

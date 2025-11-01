@@ -40,6 +40,20 @@ export default function WelcomeSection() {
           <b>Sản phẩm sáng tạo của nhóm 3, môn VNR202-SE1735 trường đại học FPT</b>
         </h3>
         
+        <h3 className="text-white my-4 text-base md:text-lg px-4 text-center bg-black/30 backdrop-blur-sm py-2 rounded-lg max-w-3xl border border-white/10">
+          <b>
+            Nguồn video:{" "}
+            <a
+              href="https://www.youtube.com/watch?v=RzTxaGZ4bTw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline underline-offset-2"
+            >
+              https://www.youtube.com/watch?v=RzTxaGZ4bTw
+            </a>
+          </b>
+        </h3>
+
         <button
           className="p-[3px] relative mt-8 hover:scale-105 transition-transform duration-300 group"
           onClick={handleScrollToContent}
