@@ -37,11 +37,11 @@ export default function HorizontalScroll(): JSX.Element {
         <main>
           <section
             id="welcome-header"
-            className="min-h-screen flex items-center justify-center bg-gradient-to-b from-indigo-950 via-black to-slate-900 relative overflow-hidden"
+            className="h-[80vh] flex items-center justify-center bg-gradient-to-b from-indigo-950 via-black to-slate-900 relative overflow-hidden pt-20"
           >
             <LazyVideo
               src="/assets/videos/video.mp4"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              className="absolute top-0 left-0 w-full h-[70vh] object-cover z-0 mt-10 px-32"
             />
             <div className="container relative z-10 mx-auto px-4">
               <div className="text-center">
@@ -52,10 +52,10 @@ export default function HorizontalScroll(): JSX.Element {
 
           <section id="giai-doan-1">
             <OpinionSection />
-            <DevelopmentSection />
           </section>
 
           <section id="giai-doan-2" className="bg-gradient-to-t from-slate-950 via-indigo-900 to-black">
+            <DevelopmentSection />          
             <div className="h-[20vh]">
               <LampDemo />
             </div>
@@ -68,18 +68,46 @@ export default function HorizontalScroll(): JSX.Element {
           </section>
 
           <section id="chat" className="bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-900">
-            <section className="text-white w-full bg-slate-950 grid place-content-center px-4 pt-10">
+            <section className="text-white w-full bg-slate-950 grid place-content-center px-4 py-10">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
                 VNR202 AI Chatbot
               </h1>
             </section>
-            <div className={`h-[90vh] w-full sm:px-[15%] sm:py-[5%]`}>
+            <div className={`h-[90vh] w-full sm:px-[15%] sm:py-[5%] bg-slate-950`}>
               <ChatProvider>
                 <ChatContainer />
               </ChatProvider>
             </div>
           </section>
           <QuizSection/>
+          <section className="bg-slate-900 text-white py-16 px-6 lg:px-16">
+            <div className="max-w-5xl mx-auto text-center">
+              <h2 className="text-3xl sm:text-4xl font-bold text-orange-400 mb-6">
+                🌐 Nguyên tắc sử dụng AI trong dự án
+              </h2>
+              <p className="text-lg text-gray-300 mb-10">
+                Việc ứng dụng trí tuệ nhân tạo (AI) trong quá trình thực hiện website tuân thủ các nguyên tắc sau nhằm đảm bảo minh bạch, trách nhiệm và liêm chính học thuật.
+              </p>
+
+              <div className="text-left space-y-6 bg-black/30 border border-white/10 p-6 rounded-xl backdrop-blur-sm">
+                
+                <div>
+                  <h3 className="font-semibold text-xl text-blue-400 mb-2">1. Trách nhiệm</h3>
+                  <p>
+                    Tất cả thông tin do AI hỗ trợ được <b>đối chiếu với giáo trình Lịch sử Đảng Cộng sản Việt Nam (2021) từ trang 71 đến trang 83, nghị quyết, các văn bản chính thống và các tờ báo điện tử</b>; nhóm chịu trách nhiệm hoàn toàn về nội dung cuối cùng.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-xl text-blue-400 mb-2">2. Sáng tạo</h3>
+                  <p>
+                    AI chỉ đóng vai trò <b>hỗ trợ</b> trong việc tạo quiz, chatbot. <b>không thay thế toàn bộ</b> quá trình nghiên cứu và biên soạn của sinh viên.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <div className="text-center py-8 bg-gradient-to-t from-black via-indigo-950 to-slate-900">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold animate-gradient bg-gradient-to-r from-green-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
               Cảm ơn bạn vì đã ghé thăm web!
