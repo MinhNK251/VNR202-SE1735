@@ -8,27 +8,101 @@ export default function OpinionSection(): JSX.Element {
     <ReactLenis root>
       <main className="bg-black">
         <div className="wrapper">
-          <section className="text-white min-h-screen w-full bg-slate-950 flex items-center justify-center sticky top-0 px-4 py-8">
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+          <section className=" relative text-white pt-20 w-full bg-slate-950 grid place-content-center px-4">
+            <h1 className="text-orange-500 text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+              🏛️ Cao trào cách mạng 1930-1931
+            </h1>
+            <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+              Phong trào này diễn ra ngay sau khi Đảng Cộng sản Việt Nam ra đời, trong bối cảnh cuộc khủng hoảng kinh tế 1929-1933 và chính sách khủng bố trắng của thực dân Pháp sau khởi nghĩa Yên Bái.
+            </h3>
+          </section>
+          <section className="text-white w-full bg-slate-950">
+            <div className="flex flex-col lg:flex-row px-4 lg:px-16 max-w-7xl mx-auto">
+              <div className="lg:sticky lg:top-0 lg:h-screen grid place-content-center w-full lg:w-1/2 py-8 lg:py-0">
+                <div className="text-lg sm:text-xl lg:text-xl px-0 lg:px-8 font-medium text-left tracking-tight leading-relaxed">
+                  <span className="text-orange-500 font-bold">📍 Diễn biến chính:</span>
+                  <p className="mb-6">
+                    <b>Tháng 1 - 4/1930:</b> Phong trào nổ ra liên tiếp với các cuộc bãi công của công nhân ở nhiều nơi như nhà máy xi măng Hải Phòng, các đồn điền Phú Riềng, Dầu Tiếng, nhà máy dệt Nam Định, và nhà máy diêm Bến Thủy. Phong trào nông dân cũng diễn ra ở Hà Nam, Thái Bình, Nghệ An, Hà Tĩnh.
+                  </p>
+                  <p className="mb-6">
+                    <b>Ngày 1/5/1930:</b> Nhân dân kỷ niệm Ngày Quốc tế Lao động bằng các hình thức đấu tranh; riêng trong tháng 5 đã có 16 cuộc bãi công của công nhân và 34 cuộc biểu tình của nông dân.
+                  </p>
+                  <p className="mb-6">
+                    <b>Tháng 6 - 8/1930:</b> Diễn ra 121 cuộc đấu tranh, nổi bật là cuộc tổng bãi công của công nhân khu công nghiệp Bến Thủy-Vinh (8/1930).
+                  </p>
+                  <p className="mb-6">
+                    <b>Tháng 9/1930:</b> Phong trào phát triển đến đỉnh cao. Đặc biệt, cuộc biểu tình của nông dân Hưng Nguyên vào ngày 12/9/1930 đã bị máy bay Pháp ném bom, làm chết 171 người.
+                  </p>
+                </div>
+              </div>
 
+              <div className="grid gap-8 w-full lg:w-1/2 py-8 lg:py-0">
+                {[
+                  {
+                    bg: "bg-red-500",
+                    rotate: "rotate-6",
+                    title: "⛓️ Thoát khỏi nhà tù Hồng Kông",
+                    image: "prison-hong-kong.jpg",
+                  },
+                  {
+                    bg: "bg-green-400",
+                    rotate: "-rotate-6",
+                    title: "📚 Học tại Trường Quốc tế Lênin (Liên Xô)",
+                    image: "naq-4.jpg",
+                  },
+                  {
+                    bg: "bg-orange-400",
+                    rotate: "rotate-5",
+                    title: "📝 Nghiên cứu tại Viện Dân tộc và Thuộc địa",
+                    image: "naq-3.webp",
+                  },
+                  {
+                    bg: "bg-blue-400",
+                    rotate: "-rotate-5",
+                    title: "💌 Gửi thư xin trở lại hoạt động (6/1938)",
+                    image: "letter.jpg",
+                  },
+                  {
+                    bg: "bg-purple-400",
+                    rotate: "rotate-6",
+                    title: "✈️ Chuẩn bị trở về nước (cuối 1938)",
+                    image: "return.jpg",
+                  },
+                  // ... Thêm các phần tử khác tương tự
+                ].map((item, index) => (
+                  <figure
+                    key={index}
+                    className="lg:sticky lg:top-0 lg:h-screen grid place-content-center"
+                  >
+                    <article
+                      className={`${item.bg} h-auto sm:h-[400px] w-full sm:w-[40rem] rounded-lg ${item.rotate} p-4 flex flex-col items-center gap-4`}
+                    >
+                      <h2 className="text-lg sm:text-xl font-semibold text-center flex items-center gap-2 whitespace-normal sm:whitespace-nowrap overflow-hidden text-ellipsis">
+                        {item.title}
+                      </h2>
+                      <img
+                        src={`/assets/image/${item.image}`}
+                        alt={item.title}
+                        className="h-[200px] sm:h-[300px] w-full sm:w-[550px] rounded-lg object-cover"
+                      />
+                    </article>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="text-white w-full bg-slate-950 flex items-center justify-center top-0 px-4 py-32">
             <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center gap-8 lg:gap-12">
               <blockquote className="lg:w-[58.33%] text-lg sm:text-xl lg:text-xl 2xl:text-xl font-medium text-left leading-relaxed tracking-wide">
-                <p className="mb-6">
-                  📌 Giai đoạn thử thách – 
-                  <span className="text-green-500 font-semibold"> kiên định con đường cứu nước (1930–1934)</span>
+                <p className="mb-6">                  
+                  <span className="text-orange-500 font-semibold">📌 Đỉnh cao (Xô viết Nghệ-Tĩnh)</span>
                 </p>
                 <p className="mb-6">
-                  Năm 1930, Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, 
-                  thành lập Đảng Cộng sản Việt Nam và soạn thảo Cương lĩnh chính trị đầu tiên.
+                  Trước sức mạnh của quần chúng, bộ máy chính quyền của đế quốc và tay sai ở nhiều nơi (thuộc Nghệ An và Hà Tĩnh) bị tan rã.
                 </p>
                 <p className="mb-6">
-                  Tuy nhiên, tư tưởng đặt nhiệm vụ giải phóng dân tộc lên hàng đầu của Người 
-                  bị một số người trong Quốc tế Cộng sản và nội bộ Đảng hiểu sai là 
-                  “hữu khuynh”, “dân tộc chủ nghĩa” do ảnh hưởng tư tưởng giáo điều, tả khuynh.
-                </p>
-                <p>
-                  ⚡ Dù bị hiểu lầm, Hồ Chí Minh vẫn kiên định con đường cách mạng dân tộc, 
-                  dân chủ, chờ thời cơ trở lại lãnh đạo.
+                  Các tổ chức Đảng ở cơ sở đã lãnh đạo các ban chấp hành nông hội (nông dân) đứng ra quản lý mọi mặt đời sống xã hội ở nông thôn. Đây là hình thức chính quyền cách mạng sơ khai, thực hiện dân chủ với quần chúng, được gọi là "Xô viết".
                 </p>
               </blockquote>
               <div className="relative w-full lg:w-[41.67%] h-72">
@@ -53,81 +127,46 @@ export default function OpinionSection(): JSX.Element {
               </div>
             </div>
           </section>
-        </div>
 
-        <section className="text-white w-full bg-slate-950">
-          <div className="flex flex-col lg:flex-row px-4 lg:px-16 max-w-7xl mx-auto">
-            <div className="lg:sticky lg:top-0 lg:h-screen grid place-content-center w-full lg:w-1/2 py-8 lg:py-0">
-              <p className="text-lg sm:text-xl lg:text-xl px-0 lg:px-8 font-medium text-left tracking-tight leading-relaxed">
-                <span className="font-bold">📍 Giai đoạn tìm đường trở lại – chuẩn bị lực lượng (1934–1938)</span>
-                <br />
-                - Sau khi thoát khỏi nhà tù của thực dân Anh ở Hồng Kông, Hồ Chí Minh sang Liên Xô học tại Trường Quốc tế Lênin và làm nghiên cứu sinh tại Viện nghiên cứu các vấn đề dân tộc và thuộc địa của Quốc tế Cộng sản.
-                <br />
-                - Trong thời gian này, Người vẫn bị hiểu lầm về quan điểm cách mạng, bị đứng ngoài hoạt động thực tiễn.
-                <br />
-                - Khi Chiến tranh thế giới thứ hai bùng nổ, Người nhận thấy thời cơ giải phóng dân tộc đang đến gần.
-                <br />
-                - Tháng 6-1938, Người gửi thư xin được trở lại hoạt động: “Xin đồng chí giúp đỡ tôi thay đổi tình cảnh đau buồn này... Đừng để tôi sống quá lâu trong tình trạng không hoạt động và giống như là sống ở bên cạnh, ở bên ngoài của Đảng”.
-                <br />
-                - Cuối năm 1938, Người rời Liên Xô sang Trung Quốc, chuẩn bị về nước.
-              </p>
+          <section className="text-white w-full bg-slate-950 flex items-center justify-center top-0 px-4 pb-32">
+            <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center gap-8 lg:gap-12">
+              <blockquote className="lg:w-[58.33%] text-lg sm:text-xl lg:text-xl 2xl:text-xl font-medium text-left leading-relaxed tracking-wide">
+                <p className="mb-6">                  
+                  <span className="text-orange-500 font-semibold">📌 Ý nghĩa và kinh nghiệm</span>
+                </p>
+                <p className="mb-6">
+                  <b>• Thất bại và Khủng bố:</b> Đến cuối năm 1930, thực dân Pháp tập trung mọi lực lượng đàn áp khốc liệt. Đến tháng 4/1931, toàn bộ Ban Chấp hành Trung ương Đảng bị bắt. Hàng ngàn chiến sĩ cộng sản bị bắt, giết, tù đày. Tổng bí thư Trần Phú hy sinh ngày 6/9/1931 với lời căn dặn "Hãy giữ vững chí khí chiến đấu!".
+                </p>
+                <p className="mb-6">
+                  <b>• Ý nghĩa:</b> Phong trào đã khẳng định trong thực tế quyền lãnh đạo và năng lực lãnh đạo của giai cấp vô sản mà đại biểu là Đảng. Nó rèn luyện đội ngũ cán bộ, đảng viên và quần chúng yêu nước. Đặc biệt, Xô viết Nghệ Tĩnh đã mở đường cho thắng lợi về sau.
+                </p>
+                <p className="mb-6">
+                  <b>• Khôi phục phong trào (1932-1935):</b> Trong bối cảnh bị khủng bố, các chi bộ nhà tù (Hỏa Lò, Khám Lớn, Côn Đảo) được thành lập để huấn luyện, bồi dưỡng đảng viên. Đầu năm 1934, Ban Chỉ huy ở ngoài của Đảng Cộng sản Đông Dương được thành lập. Đến tháng 3/1935, Đại hội đại biểu lần thứ I của Đảng họp tại Ma Cao (Trung Quốc), đánh dấu sự phục hồi hệ thống tổ chức của Đảng, tạo điều kiện để bước vào một cao trào cách mạng mới.
+                </p>
+              </blockquote>
+              <div className="relative w-full lg:w-[41.67%] h-72">
+                {/* Top-left image */}
+                <img
+                  src="/assets/image/hoi-nghi-1.jpg"
+                  alt="Image 1"
+                  className="absolute top-0 left-0 w-80 h-52 object-cover rounded-lg shadow-md border-2 border-white rotate-[-8deg]"
+                />
+                {/* Top-right image */}
+                <img
+                  src="/assets/image/hieu-lam.jpg"
+                  alt="Image 2"
+                  className="absolute top-0 right-0 w-48 h-64 object-cover rounded-lg shadow-md border-2 border-white rotate-[8deg]"
+                />
+                {/* Bottom-center image */}
+                <img
+                  src="/assets/image/naq-1.jpg"
+                  alt="Image 3"
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 h-36 object-cover rounded-lg shadow-md border-2 border-white rotate-[-3deg]"
+                />
+              </div>
             </div>
-
-            <div className="grid gap-8 w-full lg:w-1/2 py-8 lg:py-0">
-              {[
-                {
-                  bg: "bg-red-500",
-                  rotate: "rotate-6",
-                  title: "⛓️ Thoát khỏi nhà tù Hồng Kông",
-                  image: "prison-hong-kong.jpg",
-                },
-                {
-                  bg: "bg-green-400",
-                  rotate: "-rotate-6",
-                  title: "📚 Học tại Trường Quốc tế Lênin (Liên Xô)",
-                  image: "naq-4.jpg",
-                },
-                {
-                  bg: "bg-orange-400",
-                  rotate: "rotate-5",
-                  title: "📝 Nghiên cứu tại Viện Dân tộc và Thuộc địa",
-                  image: "naq-3.webp",
-                },
-                {
-                  bg: "bg-blue-400",
-                  rotate: "-rotate-5",
-                  title: "💌 Gửi thư xin trở lại hoạt động (6/1938)",
-                  image: "letter.jpg",
-                },
-                {
-                  bg: "bg-purple-400",
-                  rotate: "rotate-6",
-                  title: "✈️ Chuẩn bị trở về nước (cuối 1938)",
-                  image: "return.jpg",
-                },
-                // ... Thêm các phần tử khác tương tự
-              ].map((item, index) => (
-                <figure
-                  key={index}
-                  className="lg:sticky lg:top-0 lg:h-screen grid place-content-center"
-                >
-                  <article
-                    className={`${item.bg} h-auto sm:h-[400px] w-full sm:w-[40rem] rounded-lg ${item.rotate} p-4 flex flex-col items-center gap-4`}
-                  >
-                    <h2 className="text-lg sm:text-xl font-semibold text-center flex items-center gap-2 whitespace-normal sm:whitespace-nowrap overflow-hidden text-ellipsis">
-                      {item.title}
-                    </h2>
-                    <img
-                      src={`/assets/image/${item.image}`}
-                      alt={item.title}
-                      className="h-[200px] sm:h-[300px] w-full sm:w-[550px] rounded-lg object-cover"
-                    />
-                  </article>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>        
       </main>
     </ReactLenis>
   );

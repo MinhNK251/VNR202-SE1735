@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quá trình phát triển tư tưởng Hồ Chí Minh giai đoạn 1930-1969",
+  title: "Cao trào cách mạng 1930-1931 và 1936 -1939",
   description:
-    "Sản phẩm sáng tạo của nhóm 2, môn HCM202-SE1735 trường đại học FPT",
+    "Sản phẩm sáng tạo của nhóm 3, môn VNR202-SE1735 trường đại học FPT",
 };
 
 export default function RootLayout({

@@ -100,7 +100,7 @@ export default function CountUp({
       >
         <span className="text-sm">
 
-          Số lượng truy cập: &nbsp;
+         Lượt truy cập: &nbsp;
         </span>
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}

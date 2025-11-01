@@ -1,5 +1,3 @@
-// thanks to oliver: https://www.youtube.com/@olivierlarose1
-
 "use client";
 import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll, MotionValue } from "framer-motion";
@@ -8,32 +6,25 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "🔁 Trở lại gần biên giới Việt – Trung (cuối 1940)",
+    title: "📅 Tháng 7/1936",
     description:
-      "Hồ Chí Minh liên lạc với Trung ương Đảng Cộng sản Đông Dương, trực tiếp chỉ đạo phong trào cách mạng trong nước.",
+      "Hội nghị Ban Chấp hành Trung ương Đảng (họp tại Thượng Hải) xác định nhiệm vụ trước mắt là chống phát xít, chống chiến tranh đế quốc, chống phản động thuộc địa và tay sai, đòi tự do, dân chủ, cơm áo và hòa bình.",
     link: "/assets/image/return.jpg",
     color: "#5196fd",
   },
   {
-    title: "📚 Mở lớp huấn luyện & viết 'Con đường giải phóng'",
+    title: "🤝 Mặt trận",
     description:
-      "Người mở lớp huấn luyện cán bộ, viết tác phẩm Con đường giải phóng (1-1941), nêu rõ phương pháp cách mạng giành chính quyền.",
+      "Chủ trương thành lập “Mặt trận nhân dân phản đế rộng rãi”. Đến tháng 3/1938, tên gọi được đổi thành “Mặt trận dân chủ thống nhất”.",
     link: "/assets/image/huan-luyen-can-bo.jpg",
     color: "#8f89ff",
   },
   {
-    title: "📍 Hội nghị Trung ương 8 tại Pác Bó (5/1941)",
+    title: "📣 Hình thức đấu tranh",
     description:
-      "Hồ Chí Minh chủ trì hội nghị, đưa ra chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, tạm gác khẩu hiệu cách mạng ruộng đất.",
+      "Đảng chủ trương chuyển từ bí mật, bất hợp pháp sang các hình thức công khai, nửa công khai, hợp pháp, nửa hợp pháp, kết hợp chặt chẽ với bí mật.",
     link: "/assets/image/hoi-nghi-6.jpg",
     color: "#4caf50",
-  },
-  {
-    title: "🤝 Thành lập Mặt trận Việt Minh",
-    description:
-      "Tập hợp, đoàn kết toàn dân trên cơ sở nòng cốt liên minh công nông, chuẩn bị khởi nghĩa vũ trang giành chính quyền.",
-    link: "/assets/image/viet-minh.jpg",
-    color: "#ed649e",
   },
 ];
 
@@ -49,12 +40,22 @@ export default function DevelopmentSection(): JSX.Element {
         <section className=" relative text-white min-h-[40vh] w-full bg-slate-950 grid place-content-center px-4">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
-            Giai đoạn trở về trực tiếp lãnh đạo – khẳng định tư tưởng (1939–1941)
+          <h1 className="text-orange-500 text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+            ☀️ Cao trào dân chủ 1936-1939
           </h1>
+          <h3 className="text-xl sm:text-xl lg:text-xl 2xl:text-xl pt-10 px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+            Phong trào này diễn ra trong bối cảnh chủ nghĩa phát xít xuất hiện và Đại hội VII Quốc tế Cộng sản (7/1935) chủ trương lập mặt trận chống phát xít. Đặc biệt, Mặt trận Nhân dân Pháp lên cầm quyền (1936), đã ban hành một số quyền tự do dân chủ ở thuộc địa, tạo điều kiện thuận lợi cho cuộc đấu tranh.
+          </h3>
         </section>
 
         <section className="text-white w-full bg-slate-950">
+          <h1
+            className="sticky top-0 z-20 bg-slate-950 text-orange-500 text-4xl sm:text-4xl lg:text-4xl 2xl:text-4xl 
+                      px-4 sm:px-8 pt-28 pb-4 font-semibold text-center tracking-tight leading-[120%]"
+          >
+            Chủ trương mới của Đảng
+          </h1>
+
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
@@ -108,35 +109,34 @@ export const Card: React.FC<CardProps> = ({
       ref={container}
       className="min-h-screen flex items-center justify-center sticky top-0 px-4 py-8 lg:py-16"
     >
-      <motion.div
-        style={{
-          backgroundColor: color,
-          scale,
-          top: `calc(-5vh + ${i * 25}px)`,
-        }}
-        className="flex flex-col relative -top-[25%] h-auto w-full sm:w-[80%] lg:w-[60%] rounded-md p-4 sm:p-6 lg:p-8 origin-top"
-      >
-        <p className="text-3xl sm:text-3xl text-center font-semibold text-black mb-4">
-          {title}
-        </p>
+        <motion.div
+          style={{
+            backgroundColor: color,
+            scale,
+            top: `calc(-5vh + ${i * 25}px)`,
+          }}
+          className="flex flex-col relative -top-[25%] h-auto w-full sm:w-[80%] lg:w-[60%] rounded-md p-4 sm:p-6 lg:p-8 origin-top"
+        >
+          <p className="text-3xl sm:text-3xl text-center font-semibold text-black mb-4">
+            {title}
+          </p>
 
-        <div className="flex flex-col lg:flex-row h-full gap-4 lg:gap-6">
-          <div className="w-full lg:w-[50%] relative flex flex-col justify-between">
-            <p className="text-base sm:text-2xl">{description}</p>
-          </div>
+          <div className="flex flex-col lg:flex-row h-full gap-4 lg:gap-6">
+            <div className="w-full lg:w-[50%] relative flex flex-col justify-between">
+              <p className="text-base sm:text-2xl">{description}</p>
+            </div>
 
-          <div className="relative lg:w-[360px] md:w-[320px] sm:w-[300px] aspect-[5/3] rounded-lg overflow-hidden ms-3">
-            <motion.div className="w-full h-full" style={{ scale: imageScale }}>
-              <Image
-                fill
-                src={url || "/placeholder.svg"}
-                alt={title}
-                className="object-cover"
-              />
-            </motion.div>
+            <div className="relative lg:w-[360px] md:w-[320px] sm:w-[300px] aspect-[5/3] rounded-lg overflow-hidden ms-3">
+              <motion.div className="w-full h-full" style={{ scale: imageScale }}>
+                <Image
+                  fill
+                  src={url || "/placeholder.svg"}
+                  alt={title}
+                  className="object-cover" />
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.div>
-    </div>
+        </motion.div>
+      </div>
   );
 };

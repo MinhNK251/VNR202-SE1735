@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import AccessCount from "@/app/_components/access-count";
 
 const navigation = [
   {
@@ -80,7 +81,7 @@ export function SiteHeader() {
                   src="/assets/image/hcm-logo.png"
                 />
               </div>
-              <span className="font-bold  sm:inline">HCM202 - SE1735 - Team 2</span>
+              <span className="font-bold  sm:inline">VNR202 - SE1735 - Team 3</span>
             </Link>
           </div>
 
@@ -112,6 +113,7 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <AccessCount />
           </nav>
         </div>
 

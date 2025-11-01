@@ -18,24 +18,21 @@ import { motion } from "framer-motion";
 const items = [
   {
     icon: <Home />,
-    title: "🌟 Phong thái và trí tuệ",
-    desc: "Nguyễn Ái Quốc là người trí tuệ, lịch thiệp, điềm đạm, có phong thái của một nhà văn hóa lớn; có bản lĩnh kiên cường, ứng xử tinh tế, giản dị mà nhân văn, tạo ấn tượng sâu sắc với mọi người như Mandenxtam miêu tả.",
-    sliderName: "Phong thái",
+    title: "🔥 Tháng 9/1939",
+    desc: "Chiến tranh thế giới thứ hai bùng nổ. Thực dân Pháp ở Đông Dương tăng cường đàn áp. Đảng phải rút vào hoạt động bí mật, kết thúc thời kỳ đấu tranh dân chủ.",
+    sliderName: "Tháng 9/1939",
     src: "/assets/image/hcm-12.png",
   },
   {
     icon: <Home />,
-    title: "📚 Tư tưởng vượt thời đại",
-    desc: "Nguyễn Ái Quốc sớm tiếp thu và vận dụng chủ nghĩa Mác – Lênin vào giải phóng dân tộc, gắn giải phóng dân tộc với giải phóng giai cấp và con người, mở ra con đường mới cho các dân tộc thuộc địa — điều này thể hiện lý tưởng tiến bộ mang tính toàn cầu, biểu hiện của một nền “văn hóa tương lai”.",
+    title: "Ý nghĩa",
+    desc: `Đây là một phong trào cách mạng sôi nổi, có tính quần chúng rộng rãi. 
+    Qua đó, một "đội quân chính trị quần chúng" gồm hàng triệu người đã được tập hợp, giác ngộ và rèn luyện. 
+    Uy tín và ảnh hưởng của Đảng được mở rộng. Đảng cũng tích lũy được nhiều kinh nghiệm về chỉ đạo chiến lược, 
+    xây dựng mặt trận và kết hợp các hình thức đấu tranh. Phong trào này "thực sự là một bước chuẩn bị cho thắng lợi 
+    của Cách mạng Tháng Tám sau này".`,
     sliderName: "Tư tưởng",
     src: "/assets/image/hcm-11.jpg",
-  },
-  {
-    icon: <Home />,
-    title: "🤝 Tình hữu ái quốc tế",
-    desc: "Nguyễn Ái Quốc luôn đề cao đoàn kết, hòa bình và công lý; đấu tranh không vì trả thù mà vì một thế giới bình đẳng, tự do, giúp đỡ các dân tộc bị áp bức.",
-    sliderName: "Quốc tế",
-    src: "/assets/image/hcm-13.jpg",
   },
 ];
 
@@ -84,24 +81,19 @@ export default function ConclusionSection() {
             }}
             className="mt-8 bg-gradient-to-br text-white from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
           >
-            Nhận xét
+            Kết thúc và Ý nghĩa
           </motion.h1>
-          <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10 mb-16">
-            <p className=" text-white dark:text-neutral-300 text-sm md:text-2xl pt-10">
-              Năm 1923, nhà thơ, nhà báo nổi tiếng người Xô Viết O.Mandenxtam gặp Nguyễn Ái Quốc lúc này 33 tuổi ở Moskva, O.Mandenxtam đã đánh giá Nguyễn Ái Quốc là một người phương Đông lịch sự, là biểu hiện cho một nền văn hóa của tương lai: “Từ Nguyễn Ái Quốc tỏa ra một thứ văn hóa, không phải văn hóa châu Âu, mà có lẽ là một nền văn hóa của tương lai. Từ trong giọng nói đầm ấm, thanh cao của Người, chúng ta như nghe thấy ngày mai, như thấy viễn cảnh trời yên biển lặng của tình hữu ái bao la toàn thế giới mênh mang như nước đại dương”.
-            </p>
-          </div>
         </LampContainer>
       </div>
       <div
         ref={sectionRef}
-        className="w-full h-full md:lg:pt-10 lg:pt-10 pt-14 bg-slate-950 overflow-hidden pb-10"
+        className="w-full h-full bg-slate-950 overflow-hidden pb-10"
       >        
         <div>
           <ProgressSlider
             vertical={isMobile}
             fastDuration={300}
-            duration={4000}
+            duration={10000}
             activeSlider={activeSlider}
             className="flex flex-col md:flex-row h-full"
           >

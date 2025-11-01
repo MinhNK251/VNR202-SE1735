@@ -32,13 +32,12 @@ export default function HorizontalScroll(): JSX.Element {
         />
       </div>
       <div className={`relative ${isLoading ? "hidden" : "block w-full"}`}>
-        {/* <ChatBotIntegration /> */}
         <SiteHeader />
 
         <main>
           <section
             id="welcome-header"
-            className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden"
+            className="min-h-screen flex items-center justify-center bg-gradient-to-b from-indigo-950 via-black to-slate-900 relative overflow-hidden"
           >
             <LazyVideo
               src="/assets/videos/video.mp4"
@@ -56,7 +55,7 @@ export default function HorizontalScroll(): JSX.Element {
             <DevelopmentSection />
           </section>
 
-          <section id="giai-doan-2" className="bg-black">
+          <section id="giai-doan-2" className="bg-gradient-to-t from-slate-950 via-indigo-900 to-black">
             <div className="h-[20vh]">
               <LampDemo />
             </div>
@@ -68,10 +67,10 @@ export default function HorizontalScroll(): JSX.Element {
             <ConclusionSection />
           </section>
 
-          <section id="chat" className="bg-slate-950">
+          <section id="chat" className="bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-900">
             <section className="text-white w-full bg-slate-950 grid place-content-center px-4 pt-10">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
-                HCM202 AI Chatbot
+                VNR202 AI Chatbot
               </h1>
             </section>
             <div className={`h-[90vh] w-full sm:px-[15%] sm:py-[5%]`}>
@@ -80,17 +79,13 @@ export default function HorizontalScroll(): JSX.Element {
               </ChatProvider>
             </div>
           </section>
-<QuizSection/>
-          <div className="text-center py-8 bg-black">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold animate-gradient bg-gradient-to-r from-yellow-400 via-red-500 to-pink-600 bg-clip-text text-transparent">
+          <QuizSection/>
+          <div className="text-center py-8 bg-gradient-to-t from-black via-indigo-950 to-slate-900">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold animate-gradient bg-gradient-to-r from-green-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
               Cảm ơn bạn vì đã ghé thăm web!
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mt-4">
               Chúng tôi trân trọng thời gian của bạn và hy vọng bạn thích trang web này.
-            </p>
-            <p className="flex justify-center">
-
-            <AccessCount />
             </p>
             <div className="flex justify-center mt-4">
               <svg

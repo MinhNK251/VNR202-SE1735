@@ -11,7 +11,7 @@ export default function AccessCount() {
           "https://abacus.jasoncameron.dev/hit/hcm202/team2"
         );
         const data = await response.json();
-        setNumber(data.value); // Set the number from the API response
+        setNumber(data.value/2 - 50); // Set the number from the API response
       } catch (error) {
         console.error("Error fetching the data", error);
       }
